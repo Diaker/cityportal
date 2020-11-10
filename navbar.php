@@ -1,19 +1,5 @@
 <?
-	session_start();
-
-	require 'php/Medoo.php';
-	 
-	// Using Medoo namespace
-	use Medoo\Medoo;
-	 
-	$database = new Medoo([
-		// required
-		'database_type' => 'mysql',
-		'database_name' => 'gorod',
-		'server' => 'localhost',
-		'username' => 'root',
-		'password' => '',
-	]);
+	require "php/config.php";
 
 	if ($_SESSION["id"]) {
 		$user = $database->select("user", "*", ["id" => $_SESSION["id"]])[0];
