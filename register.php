@@ -1,13 +1,36 @@
 <? require "navbar.php" ?>
 <div class="container">
-    <center>
+    <div class="col-md-3">
+        
+    </div>
+
+    <div class="col-md-6">
         <form action="/php/register.php" method="post">
-            <input type="text" name="login" placeholder="Логин"> <br><br>
-            <input type="password" name="password" placeholder="Пароль"> <br><br>
-            <input type="text" name="firstname" placeholder="Имя"><br><br>
-            <input type="text" name="lastname" placeholder="Фамилия"><br><br>
-            <input type="submit" name="go">
+            <div class="form-group">
+                <label for="firstname">Имя</label>
+                <input type="text" class="form-control" id="firstname" name="firstname">
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Фамилия</label>
+                <input type="text" class="form-control" id="lastname" name="lastname">
+            </div>
+
+            <div >
+                <label for="login">Логин</label>
+                <input type="text" class="form-control" id="login" name="login">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <input type="submit" class="btn btn-primary btn-block" value="Регистрация"></input>
         </form>
-    </center>
+    </div>
+
+    <div class="col-md-3">
+        
+    </div>
 </div>
 <? require "footer.php" ?>
