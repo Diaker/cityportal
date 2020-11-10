@@ -22,12 +22,10 @@ session_start();
 			header("location: /");
 		} else {
 			$_SESSION['error'] = "Неверный пароль";
-			header('location: '.$_SERVER['REQUEST_URI'].'');
+			header('location: /login.php');
 		}
 	} else {
 		$_SESSION['error'] = "Неверный логин";
-		header('location: '.$_SERVER['REQUEST_URI'].'');
+		header('location: /login.php');
 	}
-
-	
 ?>
