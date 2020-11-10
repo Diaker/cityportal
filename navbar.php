@@ -67,7 +67,7 @@
                     </ul>';
                        	}
                        ?>
-                        
+                    </a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
