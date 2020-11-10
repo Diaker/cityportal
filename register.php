@@ -25,6 +25,11 @@
                 <label for="password">Пароль</label>
                 <input type="password" class="form-control" id="password" name="password">
             </div>
+
+            <div class="form-group">
+                <label for="password">Подтверждение пароля</label>
+                <input type="password" class="form-control" id="password" name="password2">
+            </div>
             <input type="submit" class="btn btn-primary btn-block" value="Регистрация"></input>
         </form>
     </div>
