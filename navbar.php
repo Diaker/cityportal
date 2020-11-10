@@ -75,7 +75,7 @@
 </nav>
 <?
     if ($_SESSION["error"]) {
-        echo '<div class="alert alert-danger" role="alert">'.$_SESSION['error'].'</div>';
+        echo '<center><div class="alert alert-danger col-md-6" role="alert">'.$_SESSION['error'].'</div></center>';
         $_SESSION['error'] = null;
     }
 ?>
