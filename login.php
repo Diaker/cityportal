@@ -7,7 +7,7 @@
         <form action="/php/login.php" method="post">
             <div >
                 <label for="login">Логин</label>
-                <input type="text" class="form-control" id="login" aria-describedby="login" name="login">
+                <input type="text" class="form-control" id="login" name="login">
             </div>
             <div class="form-group">
                 <label for="password">Пароль</label>
