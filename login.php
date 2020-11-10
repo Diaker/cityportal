@@ -13,7 +13,7 @@
                 <label for="password">Пароль</label>
                 <input type="password" class="form-control" id="password" name="password">
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Войти</button>
+            <input type="submit" class="btn btn-primary btn-block" value="Войти"></input>
         </form>
     </div>
     <div class="col-md-3">
