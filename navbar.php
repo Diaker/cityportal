@@ -48,8 +48,6 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Главная</a></li>
-                <li><a href="register.php">Зарегистрироваться</a></li>
-                <li><a href="login.php">Войти</a></li>
                        <?
                        	if ($user) {
                             echo '<li class="dropdown">
@@ -66,7 +64,10 @@
                         <li><a href="/php/logout.php">Выход</a></li>
                     </ul></a>
                 </li>';
-                       	}
+                       	} else {
+                            echo '<li><a href="register.php">Зарегистрироваться</a></li>
+                <li><a href="login.php">Войти</a></li>';
+                        }
                        ?>
             </ul>
         </div><!-- /.navbar-collapse -->
