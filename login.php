@@ -1,22 +1,4 @@
 <? require "navbar.php" ?>
-
-<div class="jumbotron">
-    <div class="container">
-        <h1>Привет, дорогой друг!</h1>
-        <p>
-            Вместе мы сможем улучшить наш любимый город. Нам очень сложно узнать обо всех проблемах города, поэтому мы
-            предлагаем тебе помочь своему городу!
-        </p>
-        <p>
-            Увидел проблему? Дай нам знать о ней и мы ее решим!
-        </p>
-        <p>
-            <a class="btn btn-success btn-lg" href="#" role="button">Сообщить о проблеме</a>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Присоедениться к проекту</a>
-        </p>
-    </div>
-</div>
-
 <div class="container">
     <center>
         <form action="/php/login.php" method="post">
