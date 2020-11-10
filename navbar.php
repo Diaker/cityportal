@@ -73,3 +73,9 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+<?
+    if ($_SESSION["error"]) {
+        echo '<div class="alert alert-danger" role="alert">'.$_SESSION['error'].'</div>';
+        $_SESSION['error'] = null;
+    }
+?>

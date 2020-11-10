@@ -19,8 +19,15 @@ session_start();
 		$user = $database->select("user", "*", ["login" => $_POST["login"]])[0];
 		if( $user["password"] == $_POST["password"]) {
 			$_SESSION["id"] = $user["id"];
+			header("location: /");
+		} else {
+			$_SESSION['error'] = "Неверный пароль";
+			header('location: '.$_SERVER['REQUEST_URI'].'');
 		}
+	} else {
+		$_SESSION['error'] = "Неверный логин";
+		header('location: '.$_SERVER['REQUEST_URI'].'');
 	}
 
-	header("location: /")
+	
 ?>
