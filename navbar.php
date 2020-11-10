@@ -50,11 +50,11 @@
                 <li><a href="/">Главная</a></li>
                 <li><a href="register.php">Зарегистрироваться</a></li>
                 <li><a href="login.php">Войти</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">
                        <?
                        	if ($user) {
+                            echo '<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">';
                        		echo $user["firstname"];
                        		echo " ";
                        		echo $user["lastname"];
@@ -64,11 +64,10 @@
                         <li><a href="new.php">Новая заявка</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="/php/logout.php">Выход</a></li>
-                    </ul>';
+                    </ul></a>
+                </li>';
                        	}
                        ?>
-                    </a>
-                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
