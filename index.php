@@ -54,4 +54,6 @@
  </div>
     </center>
 </div>
+<script src="js/slider.js"></script>
+<script >initComparisons();</script>
 <? require "footer.php" ?>
