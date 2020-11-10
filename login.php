@@ -4,7 +4,7 @@
         
     </div>
     <div class="col-md-6">
-        <form action="/php/login.php">
+        <form action="/php/login.php" method="post">
             <div >
                 <label for="login">Логин</label>
                 <input type="text" class="form-control" id="login" aria-describedby="login" name="login">
