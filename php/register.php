@@ -27,9 +27,9 @@
 
 		$_SESSION["id"] = $database->select("user", "*", ["login" =>$_POST["login"]])[0]["id"];
 
-		header("location: /")
+		header("location: /");
 	} else {
-		$_SESSION['error'] = "Введены не все данные!"
-		header("location: /register.php")
+		$_SESSION['error'] = "Введены не все данные!";
+		header("location: /register.php");
 	}
 ?>
